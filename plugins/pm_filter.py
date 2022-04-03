@@ -640,6 +640,9 @@ async def auto_filter(client, msg, spoll=False):
     if settings["button"]:
         btn = [
             [
+                InlineKeyboardButton("New Releases", url="t.me/CinemaaVandi")
+            ]
+            [
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
